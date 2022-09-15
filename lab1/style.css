@@ -3,6 +3,7 @@ html {
   
 }
 body{
+    
     margin: 0;
     display: grid;
     grid-template-areas: 
@@ -11,8 +12,9 @@ body{
     "five five four"
     "six six six";
     grid-template-columns: 0.2fr 0.6fr 0.2fr;
-    grid-template-rows: 3fr 6fr 1fr 3fr;
-    height: 100%;
+    grid-template-rows: fit-content(20vh) fit-content(50vh) fit-content(10vh) fit-content(100vh);
+    height: 100vh;
+    
 }
 
 div {
@@ -50,6 +52,7 @@ div {
     align-items: flex-end;
     justify-content: center;
     flex-direction: column;
+    
 }
 
 #five{
@@ -68,13 +71,15 @@ div {
 }
 
 #x {
-    height: 30%;
+    height: fit-content;
+    min-width: fit-content;
     width: 20%;
     display: flex;
     align-items: center;
     justify-content: right;
     margin: 2%;
     background-color: white;
+    
 }
 
 h2 {
@@ -82,26 +87,27 @@ h2 {
 }
 
 #y {
-    height: 30%;
+    height: fit-content;
+    min-width: fit-content;
     width: 20%;
     display: flex;
     align-items: center;
     justify-content: left;
     margin: 2%;
     background-color: white;
+    min-width: fit-content;
+    min-height: fit-content;
 }
 
 #menu  {
 
     display: flex;
     flex-direction: column;
+    justify-content: end;
 
 }
 
-#menu a, #m{
-    padding-right: 5%;
-    width: 60px;
-}
+
 
 .image {
     width: 100px;
