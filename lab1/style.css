@@ -23,31 +23,48 @@ div {
     grid-area: one;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
 }
 
 #two{
     background-color: lightcoral;
     grid-area: two;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
 }
 
 #three{
     grid-area: three;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+
 }
 
 #four{
     background-color: lightcoral;
     grid-area: four;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
 }
 
 #five{
     background-color: lightgreen;
     grid-area: five;
+    display: flex;
+    align-items: center;
 }
 
 #six{
     background-color: lightblue;
     grid-area: six;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #x {
@@ -75,13 +92,15 @@ h2 {
 }
 
 #menu  {
+
     display: flex;
     flex-direction: column;
 
 }
 
 #menu a, #m{
-    margin-left: 5%;
+    padding-right: 5%;
+    width: 60px;
 }
 
 .image {
