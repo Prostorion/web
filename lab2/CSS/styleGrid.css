@@ -1,0 +1,150 @@
+
+body{
+    
+    margin: 0;
+    display: grid;
+    grid-template-areas: 
+    "one one one"
+    "two three four"
+    "five five four"
+    "six six six";
+    grid-template-columns: 0.16fr 0.64fr 0.2fr;
+    
+    
+}
+
+span {
+    margin: 10px;
+}
+
+div {
+    border: solid 1px;
+}
+#one{
+    background-color: lightblue;
+    grid-area: one;
+    display: grid;
+    grid-template-areas: "one two";
+    grid-template-columns: 8fr 2fr;
+    height: fit-content;
+    align-items: center;
+
+}
+
+#two{
+    background-color: lightcoral;
+    grid-area: two;
+    
+}
+
+#three{
+    grid-area: three;
+    box-sizing: border-box;
+    
+
+}
+
+#four{
+    background-color: lightcoral;
+    grid-area: four;
+    text-align: right;
+    display: grid;
+    align-items: center;
+}
+
+#four-span {
+    
+    display: inline-block;
+    vertical-align: middle;
+    
+}
+
+#five{
+    background-color: lightgreen;
+    grid-area: five;
+}
+
+#five-span {
+    display: inline-block;
+}
+
+
+
+#six{
+    background-color: lightblue;
+    grid-area: six;
+    display: grid;
+    grid-template-areas: "one two";
+    grid-template-columns: 8fr 2fr;
+    height: fit-content;
+    align-items: center;
+
+    
+}
+
+
+#x, #y {
+    margin: 10px;
+}
+#x {
+    width: 25%;
+    margin: 10px;
+    background-color: white;
+    grid-area: one;
+    text-align: right;
+}
+
+#y {
+    width: 25%;
+    margin: 10px;
+    background-color: white;
+    grid-area: one;
+}
+
+#y-span {
+    grid-area: two;
+    text-align: right; 
+}
+
+#x-span {
+    grid-area: two;
+    text-align: right; 
+    
+}
+
+
+h2, h4 {
+    margin: 0;
+}
+
+
+
+#m {
+    text-align: end;
+    margin-bottom: 26px;
+}
+ #menu  {
+
+    display: grid;
+    grid-template-areas: 
+    "one"
+    "two"
+    "three";
+    place-items: end;
+    margin: 10px;
+} 
+
+
+
+a[href="index.html"] {
+    grid-area: one;
+}
+
+a[href="grid.html"] {
+    grid-area: two;
+}
+
+a[href="noFlexNoGrid.html"] {
+    grid-area: three;
+}
+
