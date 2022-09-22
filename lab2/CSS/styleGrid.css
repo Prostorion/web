@@ -89,7 +89,7 @@ div {
 #x {
     width: 25%;
     margin: 10px;
-    background-color: white;
+    background-color: aliceblue;
     grid-area: one;
     text-align: right;
 }
@@ -97,7 +97,7 @@ div {
 #y {
     width: 25%;
     margin: 10px;
-    background-color: white;
+    background-color: aliceblue;
     grid-area: one;
 }
 
