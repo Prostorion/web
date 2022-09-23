@@ -51,11 +51,11 @@ header {
     flex-wrap: nowrap;
     align-items: center;
     justify-content: space-between;
-    
+    z-index: 5;
 }
 
 .logo i{
-    animation: 10s linear infinite rotation;
+    animation: 20s linear infinite rotation;
     transition: all 1s;
 }
 
@@ -124,11 +124,14 @@ header {
     text-align: center;
     height: fit-content;
     font-weight: bold;
+    transition: all 0.2s;
+    background-color: white;
+    cursor: pointer;
 }
 
 .option-icon {
     color: #f97c37;
-    background-color: white;
+    
 }
 
 .option-icon-div {
@@ -138,22 +141,54 @@ header {
     align-items: center;
     justify-content: center;
     margin-top: -20px;
-    background-color: white;
+    background-color: inherit;
     z-index: 2;
+    border-radius: 50%;
 
+}
+
+.option:hover {
+    border-radius: 15px;
+    background-color: #DDDDDD;
 }
 
 
 /* footer */
 
 footer {
+    height: fit-content;
     background-color: #333333;
     color: white;
-    height: 100px;
+    min-height: 100px;
     padding-left: 10%;
     padding-right: 10%;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+@media screen and (max-width: 540px) {
+    .main-section {
+        margin: 1rem;
+    }
+
+    .main-section h1 {
+        font-size: 25px;
+    }
+    
+    .main-text {
+        width: 90%;
+    }
+    
+    .options{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+  }
