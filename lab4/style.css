@@ -54,6 +54,22 @@ header {
     
 }
 
+.logo i{
+    animation: 10s linear infinite rotation;
+    transition: all 1s;
+}
+
+.logo:hover i{
+    color:#f97c37;
+}
+
+@keyframes rotation {
+    100% {
+        transform:rotate(360deg);
+    }
+
+}
+
 .logo, .bars {
     margin-left: 10%;
     margin-right: 10%;
